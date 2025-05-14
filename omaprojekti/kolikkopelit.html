@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fi">
+<header>
+    <nav></nav>
+</header>
+  <style>
+    .centered-img {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+<a href="index.html">
+    <img src="POTTI2.PNG" 
+    style="width: 250px; height: 250px;" 
+    class="centered-img" 
+    alt="kotinäyttö">
+  </a>
+<head>
+  <title>kolikkopelit</title>
+  <link rel="icon" href="/omaprojekti/POTTI2.PNG" type="POTTI2/PNG">
+<nav>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Potti" content="Kolikkopeli osuus. Erilaisia kolikko/slotti pelejä." />
+    <meta name="Potti, Potti kasino, Potti nettikasino" content="Slotit, slots, kolikkopelit, online, gambling, Potti, jackpot, kasino, casino" />
+    <meta name="Oskari" content="Potti" />
+
+</head>
+<style>
+  body {
+    margin-top: 0;
+    
+    font-family: Arial, sans-serif;
+  }
+
+  /* Menu nappi */
+  .menu-btn {
+    font-size: 30px;
+    padding: 8px 8px;
+    cursor: pointer;
+    background-color:rgb(22, 0, 29);
+    color: rgb(255, 251, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+  }
+
+  /* Sivu menu */
+  .side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgb(22, 0, 29);
+    overflow-x: hidden;
+    transition: 0.25s;
+    padding-top: 60px;
+    z-index: 1000;
+  }
+
+  .side-menu a {
+    display: block;
+    color: rgb(255, 252, 103);
+    padding: 15px 25px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .side-menu a:hover {
+    background-color: rgb(16, 1, 20);
+  }
+</style>
+</head>
+<body>
+
+<!-- Toggle nappi -->
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<!-- Sivu Navigointi -->
+<div id="sideMenu" class="side-menu">
+<a href="#">Profiili</a>
+<a href="#">Asetukset</a>
+<a href="#">Ota yhteyttä</a>
+
+</div>
+
+<!-- JS toggle -->
+<script>
+let menuOpen = false;
+
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  if (menuOpen) {
+    menu.style.width = "0";
+  } else {
+    menu.style.width = "280px";
+  }
+  menuOpen = !menuOpen;
+}
+</script>
+<h2>Etsi pelejä
+<form action="/search" method="get">
+    <input type="search" name="etsi" placeholder="Pelin nimi" style="width: 150px; padding: 5px;" />
+    <button type="submit">Etsi</button>
+  </form>
+</h2>
+<h2>Suositut pelit</h2>
+<ul>
+    <img src="fortunegems.png" style="height: 75px;"><img src="colorslots.png" style="height: 75px;"><img src="fortune spins.png" style="height: 80px;"><img src="slots.png" style="height: 80px;"><img src="casinoslot.jpg" style="height: 75px;">
+  </ul>
+
+<h2>Uudet pelit</h2>
+<ul>
+    <img src="rockwin.jpg" style="height: 75px;"><img src="cornflake.jpg" style="height: 75px;"><img src="fortunegems.png" style="height: 80px;">
+  </ul>
+
+
+<footer>
+    <style>
+      footer {
+    margin-top: 50px;
+      }
+    </style>
+    
+      
+      
+      <p>About - Terms of Use - Cookies - Support - Media</p>
+      <p><span class="f1">Helsinki 00970</span></p>
+      
+    </footer>

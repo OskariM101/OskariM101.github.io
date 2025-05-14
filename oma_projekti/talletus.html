@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Potti" content="rahan talletus osio. Pelaaja pystyy nostamaan ja tallettamaan rahaa täältä" />
+    <meta name="Potti, Potti kasino, Potti nettikasino" content="withdraw money, nosta rahaa, talleta rahaa, deposit money, money, raha" />
+    <meta name="Oskari" content="Potti" />
+    <title>talletus</title>
+</head>
+<style>
+    .centered-img {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+<a href="potti.html">
+  <img src="POTTI2.PNG" 
+  style="width: 250px; height: 250px;" 
+  class="centered-img" 
+  alt="kotinäyttö">
+</a>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="Oskari">
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+
+</head>
+<style>
+  body {
+    margin-top: 0;
+    
+    font-family: Arial, sans-serif;
+  }
+
+  /* Menu nappi */
+  .menu-btn {
+    font-size: 30px;
+    padding: 8px 8px;
+    cursor: pointer;
+    background-color:rgb(22, 0, 29);
+    color: rgb(255, 251, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+  }
+
+  /* Sivu menu */
+  .side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgb(22, 0, 29);
+    overflow-x: hidden;
+    transition: 0.25s;
+    padding-top: 60px;
+    z-index: 1000;
+  }
+
+  .side-menu a {
+    display: block;
+    color: rgb(255, 252, 103);
+    padding: 15px 25px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .side-menu a:hover {
+    background-color: rgb(16, 1, 20);
+  }
+</style>
+</head>
+<body>
+
+<!-- Toggle nappi -->
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<!-- Sivu Navigointi -->
+<div id="sideMenu" class="side-menu">
+<a href="#">Profiili</a>
+<a href="#">Asetukset</a>
+<a href="#">Ota yhteyttä</a>
+
+</div>
+
+<!-- JS toggle -->
+<script>
+let menuOpen = false;
+
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  if (menuOpen) {
+    menu.style.width = "0";
+  } else {
+    menu.style.width = "280px";
+  }
+  menuOpen = !menuOpen;
+}
+</script>
+<body>
+<h1>Saldosi:</h1>
+<style>h1
+{
+    text-align: left;
+}
+</style>
+<h2>Talleta pelitilille.
+    <h3>Valitse talletusmuoto</h3>
+</h2>
+<h2>Nosta pelitililtä.</h2>
+<h3>Valitse nostomuoto</h3>
+</body>
+</html>

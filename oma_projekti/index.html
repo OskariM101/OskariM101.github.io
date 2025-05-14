@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <style>
+    .centered-img {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+  
+  
+  
+
+  
+  <title>Potti</title>
+  <link rel="icon" href="/oma_projekti/POTTI2.PNG" type="POTTI2/PNG">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="Potti" content="Potti nettikasino. Erilaisia kolikkopelejä sekä urheiluun vedonlyöntiä" />
+  <meta name="Potti, Potti kasino, Potti nettikasino" content="Slotit, slots, kolikkopelit, vedonlyönti, gambling, Potti, jackpot, kasino, casino" />
+  <meta name="Oskari" content="Potti" />
+  
+
+ <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <img src="POTTI2.PNG" style="width: 250px; height: 250px;" class="centered-img">
+  <style>
+    body {
+      margin-top: 0;
+      
+      font-family: Arial, sans-serif;
+    }
+
+    /* Menu nappi */
+    .menu-btn {
+      font-size: 30px;
+      padding: 8px 8px;
+      cursor: pointer;
+      background-color:rgb(22, 0, 29);
+      color: rgb(255, 251, 0);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1001;
+    }
+
+    /* Sivu menu */
+    .side-menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color:rgb(22, 0, 29);
+      overflow-x: hidden;
+      transition: 0.25s;
+      padding-top: 60px;
+      z-index: 1000;
+    }
+
+    .side-menu a {
+      display: block;
+      color: rgb(255, 252, 103);
+      padding: 15px 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .side-menu a:hover {
+      background-color: rgb(16, 1, 20);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Toggle nappi -->
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<!-- Sivu Navigointi -->
+<div id="sideMenu" class="side-menu">
+  <a href="#">Profiili</a>
+  <a href="#">Asetukset</a>
+  <a href="#">Ota yhteyttä</a>
+  
+</div>
+
+<!-- JS toggle -->
+<script>
+  let menuOpen = false;
+
+  function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    if (menuOpen) {
+      menu.style.width = "0";
+    } else {
+      menu.style.width = "280px";
+    }
+    menuOpen = !menuOpen;
+  }
+</script>
+  <header>
+  
+  
+  </header>
+  <nav>
+    <ul>
+      <li><button><a href="vedonlyonti.html">Vedonlyönti</a></button>
+        <button><a href="kolikkopelit.html">Kolikkopelit</a></button></li>
+      <li><button><a href="bonukset.html"><span class="bonukset">Bonukset</a></span></button>
+        <button><a href="talletus.html">Talletus</a></button></li>
+    </ul>
+  </nav>
+<header>
+  <h2>Tervetuloa Potti kasinolle!</h2>
+
+</header>
+<header>
+    <style>
+      .text-box {
+        width: 300px;         
+        margin-left: 20px;    
+        text-align: left;     
+        
+      }
+    </style>
+    <div class="text-box">
+      <p>Tarjoamme parhaat bonukset sekä säännöllisesti kampanjoita vedonlyöntiin ja kolikkopeleihin, jotta voittamisestasi tulisi mahdollisimman monipuolista. 
+        Älä pelkää menestystä ja aloita nousukautesi jo tänään!</p>
+        
+</header>
+    
+  <h2>Kampanjat</h2>  
+  <p>Ei aktiivisia kamppanjoita tällä hetkellä.</p>
+  <h2>Vedonlyönti</h2>
+  <h3>
+    <ul>
+      <li>Suositut kohteet</li>
+      <img src="nba.jpg" style="width: 100px;"><img src="mlb.jpg" style="width: 100px;"><img src="nfl.jpg" style="height: 100px;"><img src="nhl.jpg" style="height: 100px;"><img src="soccer.jpg" style="height: 100px;">
+    </ul>
+ 
+
+<h2>Kolikkopelit</h2>
+<h3>
+<ul>
+  <li><a>Uudet</a></li>
+  <img src="rockwin.jpg" style="height: 100px;"><img src="cornflake.jpg" style="height: 100px;"><img src="fortunegems.png" style="height: 105px;">
+</ul>
+</h3>
+
+
+<footer>
+<style>
+  footer {
+margin-top: 75px;
+  }
+</style>
+
+  
+  
+  <p>About - Terms of Use - Cookies - Support - Media</p>
+  <p><span class="f1">Helsinki 00970</span></p>
+  
+</footer>
